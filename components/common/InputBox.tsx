@@ -10,7 +10,6 @@ interface InputBoxProps {
 }
 
 const InputBox: React.FC<InputBoxProps> = ({ value, onChange, onSend, placeholder }) => {
-  const handleClear = () => onChange('');
 
   return (
     <Input
