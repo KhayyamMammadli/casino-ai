@@ -1,6 +1,6 @@
 import React from 'react';
 import { Input, Button as AntButton } from 'antd';
-import { CloseCircleOutlined } from '@ant-design/icons';
+
 
 interface InputBoxProps {
   value: string;
@@ -20,12 +20,6 @@ const InputBox: React.FC<InputBoxProps> = ({ value, onChange, onSend, placeholde
       onChange={(e) => onChange(e.target.value)}
       suffix={
         <>
-          {value && (
-            <CloseCircleOutlined
-              onClick={handleClear}
-              style={{ marginRight: 8, cursor: 'pointer', color: '#999' }}
-            />
-          )}
           <AntButton
             type="primary"
             shape="circle"
